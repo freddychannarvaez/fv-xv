@@ -1,0 +1,142 @@
+---
+const location = "https://maps.app.goo.gl/pb1XGH1WDBJsHFqf9";
+---
+<section class="main-info abhaya">
+  <span class="invite">Te invito a celebrar mis XV años</span>
+  <img class="main-image" src="maininfo.avif" alt="main image" />
+  <div class="date-column">
+    <span class="year">2025</span>
+    <div class="date-container">
+      <span>Sábado</span>
+      <span class="day">20</span>
+      <span>Diciembre</span>
+    </div>
+  </div>
+  <div class="location">
+    <div class="info">
+      <span class="venue bold">Local GAFY</span>
+      <span class="venue">21:00 Hrs</span>
+      <a class="address" href={location} target="_blank">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+        >
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="10" r="3"></circle>
+            <path
+              d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8"
+            ></path>
+          </g>
+        </svg>
+        <span>Calle 20 Num. 110, San José Tzal, Yuc.</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  :root {
+    /* --text: #070C9B; */
+    --text: #a60085;
+    --text-light: #e80064;
+  }
+  .main-info {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    color: var(--text);
+    /* color: #7a2143; */
+    /* color: #8e2349; */
+    text-align: center;
+    background-color: #f9dec9;
+    /* background-color: #fdf3f4; */
+    overflow: hidden;
+
+    .invite {
+      font-size: 24px;
+    }
+
+    .main-image {
+      width: auto;
+      height: 300px;
+      border-radius: 5px;
+    }
+    .year {
+      font-size: 36px;
+    }
+
+    .date-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 30px;
+      letter-spacing: 3px;
+
+      span:nth-child(1) {
+        padding-right: 10px;
+        border-right: 1px solid gray;
+        text-align: right;
+        letter-spacing: 7px;
+        width: 166px;
+      }
+      span:nth-child(3) {
+        padding-left: 10px;
+        border-left: 1px solid gray;
+        text-align: left;
+        width: 166px;
+      }
+      .day {
+        font-size: 40px;
+        min-width: unset;
+      }
+    }
+
+    .location {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .venue {
+        font-size: 24px;
+      }
+
+      .address {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--text);
+        border-bottom: 2px solid var(--text);
+        padding-bottom: 2px;
+      }
+
+      a:hover {
+        color: var(--text-light);
+        border-bottom-color: var(--text-light);
+        /* color: #aa2651;
+                    border-bottom-color: #aa2651; */
+      }
+    }
+  }
+</style>
