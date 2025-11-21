@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/abhaya-libre": "^5.2.7",
     "astro": "^5.14.5"
   }
 }
