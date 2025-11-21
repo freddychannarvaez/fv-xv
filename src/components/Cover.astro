@@ -1,0 +1,81 @@
+<section class="cover tangerine">
+  <span class="title t">Mis XV</span>
+  <span class="subtitle">Fanny Valentina</span>
+  <span class="quote"
+    >La vida es un regalo que celebro cada día, y hoy me llena de alegría
+    compartir con ustedes el inicio de una nueva etapa. Acompáñeme a celebrar
+    mis XV años y a hacer de esta noche un recuerdo inolvidable.</span
+  >
+  <img class="corner corner1" src="corner.svg" alt="corner decoration" />
+  <img class="corner corner2" src="corner.svg" alt="corner decoration" />
+  <img class="corner corner3" src="corner.svg" alt="corner decoration" />
+  <img class="corner corner4" src="corner.svg" alt="corner decoration" />
+</section>
+
+<style>
+  .cover {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 80px 30px;
+    /* background-color: #004dd1; */
+    /* background-color: #070C9B; */
+    background-color: #E9AFA3;
+    color: #a60085;
+    /* color: white; */
+    /* color: #f9dec9; */
+
+    .title {
+      font-size: 40px;
+      font-weight: 700;
+      /* color: #ca3461; */
+    }
+    .subtitle {
+      font-size: 48px;
+      font-weight: 700;
+      /* color: #ca3461; */
+    }
+    .quote {
+      font-size: 32px;
+      font-weight: 400;
+      /* color: #7a2143; */
+      text-align: center;
+      max-width: 600px;
+      margin-top: 1rem;
+    }
+  }
+
+  .corner {
+    width: 150px;
+
+  }
+  .corner1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    rotate: 90deg;
+  }
+  .corner2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    rotate: 90deg;
+    transform: scaleY(-1);
+  }
+  .corner3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    rotate: -90deg;
+    transform: scaleY(-1);
+  }
+  .corner4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    rotate: -90deg;
+  }
+</style>

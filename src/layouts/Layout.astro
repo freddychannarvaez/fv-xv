@@ -1,22 +1,49 @@
+---
+import '@fontsource/abhaya-libre';
+
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/party.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+		<title>Fanny Valentina XV años</title>
+		<link rel="canonical" href="https://fanny-valentina-xv.vercel.app/" />
+		<meta property="og:image" content='https://fanny-valentina-xv.vercel.app/maininfo.avif' />
+		<meta property="og:title" content='XV años de Fanny Valentina'/>
+		<meta property="og:description" content='Invitación digital para los XV años de Fanny Valentina'/>
+		<meta property="og:url" content="https://fanny-valentina-xv.vercel.app/" />
+		<meta property="og:site_name" content="Fanny Valentina XV" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="es_ES" />
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
 
-<style>
+<style is:global>
 	html,
 	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.tangerine {
+		font-family: "Tangerine", cursive;
+	}
+
+	.abhaya {
+		font-family: 'Abhaya Libre', serif;
+	}
+
+	.bold {
+		font-weight: bold;
 	}
 </style>

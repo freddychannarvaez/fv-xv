@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Cover from "./Cover.astro";
+import MainInfo from "./MainInfo.astro";
+import AdditionalInfo from "./AdditionalInfo.astro";
+import Last from "./Last.astro";
+
+const { invited } = Astro.props;
+---
+
+<Layout>
+  <Cover />
+  <MainInfo />
+  <AdditionalInfo invited={invited} />
+  <Last />
+</Layout>
