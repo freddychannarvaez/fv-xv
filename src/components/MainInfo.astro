@@ -42,9 +42,12 @@ const location = "https://maps.app.goo.gl/pb1XGH1WDBJsHFqf9";
 
 <style>
   :root {
-    /* --text: #070C9B; */
-    --text: #a60085;
-    --text-light: #e80064;
+    /* --background-color: #f9dec9; */
+    --main-info-background-color: #9bd7ff;
+    /* --main-info-text: #7b7485; */
+    --main-info-text: #070C9B;
+    /* --main-info-text: #a60085; */
+    --main-info-text-light: #e80064;
   }
   .main-info {
     max-width: 100%;
@@ -54,11 +57,11 @@ const location = "https://maps.app.goo.gl/pb1XGH1WDBJsHFqf9";
     justify-content: center;
     gap: 30px;
     padding: 40px 20px;
-    color: var(--text);
+    color: var(--main-info-text);
     /* color: #7a2143; */
     /* color: #8e2349; */
     text-align: center;
-    background-color: #f9dec9;
+    background-color: var(--main-info-background-color);
     /* background-color: #fdf3f4; */
     overflow: hidden;
 
@@ -124,14 +127,14 @@ const location = "https://maps.app.goo.gl/pb1XGH1WDBJsHFqf9";
 
       a {
         text-decoration: none;
-        color: var(--text);
-        border-bottom: 2px solid var(--text);
+        color: var(--main-info-text);
+        border-bottom: 2px solid var(--main-info-text);
         padding-bottom: 2px;
       }
 
       a:hover {
-        color: var(--text-light);
-        border-bottom-color: var(--text-light);
+        color: var(--main-info-text-light);
+        border-bottom-color: var(--main-info-text-light);
         /* color: #aa2651;
                     border-bottom-color: #aa2651; */
       }

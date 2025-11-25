@@ -1,9 +1,10 @@
 ---
+const waUrl = 'https://wa.me/529991443055?text=%C2%A1Hola%21%20Quiero%20confirmar%20mi%20asistencia%20a%20los%20XV%20años%20de%20Fanny%20Valentina%20el%2020%20de%20Diciembre%20de%202025%2E';
 ---
 <section class="last">
   <div class="confirm">
     <span class="tangerine bold">Gracias por acompañarme en este día tan especial</span>
-    <a href="https://wa.me/529991443055?text=Confirmo%20mi%20asistencia" target="_blank" rel="noopener noreferrer">Confirmar asistencia</a>
+    <a href={waUrl} target="_blank" rel="noopener noreferrer">Confirmar asistencia</a>
   </div>
   <div class="countdown-container">
     <div class="countdown abhaya">
@@ -40,12 +41,20 @@
 </section>
 
 <style>
+
+  :root {
+    /* --last-background-color: #f9dec9; */
+    --last-background-color: #9bd7ff;
+    --last-text-color: #070C9B;
+    /* --last-text-color: #a60085; */
+    --last-text-color-light: #ba2c73;
+  }
   .last {
     height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f9dec9;
+    background-color: var(--last-background-color);
 
     .confirm {
       padding: 0 30px;
@@ -57,7 +66,7 @@
       justify-content: center;
       text-align: center;
       font-size: 32px;
-      color: #a60085;
+      color: var(--last-text-color);
 
       span {
         padding: 0 40px
@@ -66,7 +75,7 @@
       a {
         padding: 10px 20px;
         font-size: 20px;
-        background-color: #a60085;
+        background-color: var(--last-text-color);
         color: white;
         border: none;
         border-radius: 5px;
@@ -74,7 +83,7 @@
         text-decoration: none;
 
         &:hover {
-          background-color: #ba2c73;
+          background-color: var(--last-text-color-light);
         }
       }
     }

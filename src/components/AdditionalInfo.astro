@@ -10,7 +10,7 @@ const { invited } = Astro.props;
     <img src="dresscode.svg" alt="dress code icon" width="32" height="32" />
     <span>Etiqueta casual</span>
   </div>
-  <span class="recommendation">Se recomienda llevar zapatos cómodos ya que la pista de baile estará disponible en todo momento.</span>
+  <span class="recommendation">Se recomienda llevar zapatos cómodos ya que la pista de baile estará disponible la mayor parte del tiempo.</span>
 
   <div class="gift">
     <img src="gift.svg" alt="gift icon" width="32" height="32" />
@@ -21,7 +21,11 @@ const { invited } = Astro.props;
 <style>
 
   :root {
-    --text: #a60085;
+    /* --additional-info-text: #a60085; */
+    --additional-info-text: #070C9B;
+    --additional-info-background-color: #e6f3f7;
+    /* --additional-info-background-color: #6ea4bf; */
+    /* --additional-info-background-color: #e9afa3; */
   }
   
   .additional-info {
@@ -31,8 +35,8 @@ const { invited } = Astro.props;
     align-items: flex-start;
     justify-content: center;
     gap: 15px;
-    background-color: #e9afa3;
-    color: var(--text);
+    background-color: var(--additional-info-background-color);
+    color: var(--additional-info-text);
 
     .info-item {
       display: flex;
