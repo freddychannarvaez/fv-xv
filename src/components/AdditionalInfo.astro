@@ -2,17 +2,16 @@
 const { invited } = Astro.props;
 ---
 <section class="additional-info abhaya">
-  <div class="info-item">
+  <div class="info-item" data-aos="fade-up" data-aos-delay="200">
     <img src="ticket.svg" alt="ticket icon" width="32" height="32" />
     <span>{invited ?? 1} persona{invited > 1 ? 's' : ''}</span>
   </div>
-  <div class="info-item">
+  <div class="info-item" data-aos="fade-up" data-aos-delay="300">
     <img src="dresscode.svg" alt="dress code icon" width="32" height="32" />
     <span>Etiqueta casual</span>
   </div>
-  <span class="recommendation">Se recomienda llevar zapatos cómodos ya que la pista de baile estará disponible la mayor parte del tiempo.</span>
-
-  <div class="gift">
+  <span class="recommendation" data-aos="fade-up" data-aos-delay="400">Se recomienda llevar zapatos cómodos ya que la pista de baile estará disponible la mayor parte del tiempo.</span>
+  <div class="gift" data-aos="fade-up" data-aos-delay="500">
     <img src="gift.svg" alt="gift icon" width="32" height="32" />
     <p>Para mí tu presencia es lo más importante. Si de corazón deseas hacerme un obsequio, puedes elegir el que más te inspire. Si prefieres la sencillez también dispondremos de un <strong>buzón de sobres</strong> en la entrada.</p>
   </div>

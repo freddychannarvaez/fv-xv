@@ -1,6 +1,6 @@
 ---
 import '@fontsource/abhaya-libre';
-
+import "aos/dist/aos.css";
 ---
 
 <!doctype html>
@@ -25,6 +25,13 @@ import '@fontsource/abhaya-libre';
 	</head>
 	<body>
 		<slot />
+		<script>
+			import { aosInit } from '../js/aos.js';
+		
+			// runs on initial page load
+			aosInit();
+			document.addEventListener("astro:after-swap", aosInit);
+		</script>
 	</body>
 </html>
 

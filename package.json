@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fontsource/abhaya-libre": "^5.2.7",
+    "aos": "^2.3.4",
     "astro": "^5.14.5"
   }
 }
