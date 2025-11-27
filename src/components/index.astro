@@ -5,12 +5,12 @@ import MainInfo from "./MainInfo.astro";
 import AdditionalInfo from "./AdditionalInfo.astro";
 import Last from "./Last.astro";
 
-const { invited } = Astro.props;
+const { guests } = Astro.props;
 ---
 
 <Layout>
   <Cover />
   <MainInfo />
-  <AdditionalInfo invited={invited} />
-  <Last />
+  <AdditionalInfo guests={guests} />
+  <Last guests={guests} />
 </Layout>

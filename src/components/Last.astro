@@ -1,10 +1,12 @@
 ---
-const waUrl = 'https://wa.me/529991443055?text=%C2%A1Hola%21%20Quiero%20confirmar%20mi%20asistencia%20a%20los%20XV%20años%20de%20Fanny%20Valentina%20el%2020%20de%20Diciembre%20de%202025%2E';
+const guests = Astro.props.guests;
+const waUrl1 = 'https://wa.me/529991443055?text=%C2%A1Hola%21%20Quiero%20confirmar%20mi%20asistencia%20a%20los%20XV%20años%20de%20Fanny%20Valentina%20el%2020%20de%20Diciembre%20de%202025%2E%0A%0AAgradecemos%20incluya%20su%20nombre%20en%20el%20mensaje%20de%20confirmación%2E';
+const waUrl2 = 'https://wa.me/529991443055?text=%C2%A1Hola%21%20Quiero%20confirmar%20mi%20asistencia%20a%20los%20XV%20años%20de%20Fanny%20Valentina%20el%2020%20de%20Diciembre%20de%202025%2E%0A%0AAgradecemos%20incluya%20su%20nombre%20y%20el%20de%20su%20acompañante%20en%20el%20mensaje%20de%20confirmación%2E';
 ---
 <section class="last">
   <div class="confirm">
     <span class="tangerine bold" data-aos="fade-down" data-aos-delay="200">Gracias por acompañarme en este día tan especial</span>
-    <a href={waUrl} target="_blank" rel="noopener noreferrer" data-aos="fade-down" data-aos-delay="300">Confirmar asistencia</a>
+    <a href={guests === 2 ? waUrl2 : waUrl1} target="_blank" rel="noopener noreferrer" data-aos="fade-down" data-aos-delay="300">Confirmar asistencia</a>
   </div>
   <div class="countdown-container">
     <div class="countdown abhaya" data-aos="zoom-in" data-aos-delay="400">

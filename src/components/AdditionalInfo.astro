@@ -1,10 +1,10 @@
 ---
-const { invited } = Astro.props;
+const { guests } = Astro.props;
 ---
 <section class="additional-info abhaya">
   <div class="info-item" data-aos="fade-up" data-aos-delay="200">
     <img src="ticket.svg" alt="ticket icon" width="32" height="32" />
-    <span>{invited ?? 1} persona{invited > 1 ? 's' : ''}</span>
+    <span>{guests ?? 1} persona{guests > 1 ? 's' : ''}</span>
   </div>
   <div class="info-item" data-aos="fade-up" data-aos-delay="300">
     <img src="dresscode.svg" alt="dress code icon" width="32" height="32" />
